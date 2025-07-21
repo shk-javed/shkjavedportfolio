@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaikh javed - Data Scientist </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        * {
+            margin: 0;
+            pandding: 0;
+            /* <-- Typo here */
+        }
+body {
+  font-family: Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, div, span, li, td, th {
+  font-family: Georgia, serif;
+}
+
+        body {
+            background-color: rgb(198, 236, 218);
+            color: #333;
+            font-family: 'poppins', sans-serif;
+            /* <-- 'colour' should be 'color' */
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: #b1d9c7;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #536636;
+            padding: 5px;
+            background: rgb(198, 236, 218);
+            color: black;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+
+        nav ul li a:hover {
+            color: #f4f8ec;
+            font-size: 1.1rem;
+        }
+
+        main hr {
+            position: relative;
+            top: 20px;
+            border: 0.1;
+            background: #536636;
+            height: 0.1px;
+            margin: 19px 150px;
+        }
+
+        .leftSection {
+            font-size: 0.9rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .green {
+            color: #536636;
+            font-weight: bold;
+        }
+
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .social-links img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .social-links a:hover img {
+            transform: scale(1.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 160px 0;
+            align-items: center;
+
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+
+            width: 400px;
+            /* 4 units */
+            height: 450px;
+            /* 5 units */
+            object-fit: cover;
+            border-radius: 15px;
+            /* thoda curve agar chahiye */
+            border: 2px solid #ccc;
+        }
+
+
+        .green {
+            color: #536636;
+        }
+
+        .text-green {
+            position: relative;
+            top: 10px;
+            color: #546837;
+            font-size: 0.8rem;
+        }
+
+        #element {
+            color: #536636;
+        }
+
+        .Secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .Secondsection h1 {
+            font-size: 2.3rem;
+        }
+
+        .Secondsection .box {
+            background-color: #536636;
+            width: 78vw;
+            height: 2px;
+            margin: 60px 0;
+            display: flex;
+        }
+
+        .Secondsection .vertical {
+            height: 58px;
+            width: 0.9px;
+            background-color: #536636;
+            margin: 0 170px;
+
+        }
+
+        .vertical {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Centers elements along the vertical line */
+            margin-bottom: 80px;
+            /* Adds spacing between sections */
+        }
+
+        .image-top {
+            position: relative;
+            top: -52px;
+            width: 50px;
+            margin-bottom: 10px;
+            /* Adds space below the image */
+
+        }
+
+        .vertical-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            /* Adds space below the title */
+            text-align: center;
+
+        }
+
+        .vertical-desc {
+            color: #536636;
+            width: 150px;
+            font-size: 0.8rem;
+            text-align: center;
+            /* Centers the description text */
+        }
+
+        /* Parent Container */
+        .box {
+            width: 80%;
+            /* Full width */
+            margin: 30px auto;
+            /* Centered with some margin */
+        }
+
+        /* Styling for the h2 Heading */
+        .thirdsection h2 {
+            position: relative;
+            top: 40px;
+            font-size: 3rem;
+            /* Set font size for the heading */
+            font-weight: bold;
+            /* Make the text bold */
+            color: #333;
+            /* Use a dark gray color for better readability */
+            text-align: left;
+            /* Align the text to the right */
+            margin-left: 4.3cm;
+            /* Add 8 cm spacing from the right edge */
+            margin-bottom: 20px;
+            /* Add spacing below the heading */
+
+        }
+
+
+        /* Horizontal Layout */
+        .horizontal {
+            display: flex;
+            /* Align children horizontally */
+            align-items: center;
+            /* Vertical alignment */
+            gap: 30px;
+            /* Space between image and text */
+            margin-bottom: 40px;
+        }
+
+        /* Image Styling */
+        .image-right {
+            position: relative;
+            top: 60px;
+            width: 175px;
+            margin-bottom: 10px;
+
+        }
+
+        /* Main Title Styling */
+        .horizontal-title {
+            position: relative;
+            top: 45px;
+            font-size: 2rem;
+            /* Larger font size for title */
+            font-weight: bold;
+            /* Darker text for contrast */
+            white-space: nowrap;
+            /* Prevent text wrapping */
+            overflow: hidden;
+            /* Prevent overflow */
+            text-overflow: ellipsis;
+            /* Add "..." if text is too long */
+        }
+
+        /* Subtitle Styling */
+        .subtitle {
+            position: relative;
+            top: 40px;
+            font-size: 0.8rem;
+            /* Standard font size */
+            white-space: nowrap;
+            /* Prevent text wrapping */
+            overflow: hidden;
+            /* Prevent overflow */
+            text-overflow: ellipsis;
+            /* Add "..." for long text */
+            margin-top: 5px;
+            /* Add space above subtitle */
+        }
+
+        .horizontal-desc {
+            position: relative;
+            top: 70px;
+            font-size: 0.8rem;
+            color: #536636;
+            text-align: left;
+            margin-left: 0.8cm;
+            /* Adjust as needed for spacing */
+            margin-bottom: 20px;
+            padding-left: 1rem;
+            /* Add spacing before the bullet points */
+            list-style-type: disc;
+            /* Display black dots as bullets */
+        }
+
+        .horizontal-desc li {
+            margin-bottom: 5px;
+            /* Add spacing between the list items */
+            line-height: 1.5;
+            /* Improve readability */
+        }
+
+
+        .fourthsection {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            /* Adds space between sections */
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            color: #333;
+            position: relative;
+            top: -20px;
+            /* Text color */
+        }
+
+
+        /* Headings */
+        .fourthsection h3 {
+            position: relative;
+            top: -62px;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+            /* Align the heading to the left */
+        }
+
+        /* Style for h4 headings */
+        .fourthsection h4 {
+            font-size: 1.6rem;
+            /* Set font size for the subheadings */
+            font-weight: bold;
+            margin-bottom: 12px;
+            /* Adds space below the subheading */
+            /* Dark blue-gray color for the subheadings */
+            text-transform: capitalize;
+            /* Makes the text properly capitalized */
+            letter-spacing: 1px;
+            /* Slightly increases letter spacing */
+
+            /* Clean and readable font family */
+        }
+
+        /* Optional: Add specific styles for each section (Programming Languages, Tools, Concepts) */
+        .programming-languages h4,
+        .tools h4,
+        .concepts h4 {
+            margin-top: 20px;
+            /* Adds space above each h4 */
+        }
+
+
+        /* Lists */
+        .fourthsection ul {
+            list-style-type: none;
+            /* Removes default bullet points */
+            margin-left: 0;
+            /* Align the list with the section */
+            font-size: 1rem;
+            line-height: 1.6;
+            /* Improves readability */
+            padding-left: 20px;
+            /* Adds spacing for custom bullets */
+        }
+
+        .fourthsection ul li {
+            position: relative;
+            padding-left: 20px;
+            /* Adds space for custom bullets */
+            margin-bottom: 10px;
+            /* Spacing between list items */
+            font-size: 0.8rem;
+        }
+
+        .fourthsection ul li::before {
+            content: "●";
+            /* Custom bullet point */
+            position: absolute;
+            left: 0;
+            color: #333;
+            /* Matches the section's text color */
+            font-size: 1.2rem;
+        }
+
+        /* Icons Container */
+        .icons-container {
+            display: flex;
+            flex-direction: column;
+            /* Stack rows vertically */
+            align-items: end;
+            /* Center all icons */
+            gap: 10px;
+            /* Adds space between the two rows */
+            margin-bottom: 20px;
+            /* Adds margin for spacing below icons */
+            top: 60px;
+            position: relative;
+
+        }
+
+        /* Icons Row */
+        .icons {
+            display: flex;
+            justify-content: flex-start;
+            /* Default alignment */
+            gap: 25px;
+            /* Space between icons */
+            position: relative;
+            /* Enables relative positioning */
+            top: 220px;
+            left: -20px;
+            /* Moves the entire row slightly to the right */
+
+        }
+
+        /* Individual Icons */
+        .icons img {
+            width: 60px;
+            /* Set uniform size */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        /* Style for the content div */
+        .content {
+            margin: 20px;
+            padding: 20px;
+
+            border-radius: 8px;
+        }
+
+        /* Style for the h5 heading */
+        .content h5 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* Style for the paragraph inside .content */
+        .content p {
+            position: relative;
+            left: 50px;
+            top: 40px;
+            font-size: 0.8rem;
+            /* Adjust the text size */
+            color: #555;
+            /* Text color */
+            line-height: 3;
+            /* Spacing between lines */
+            margin: 10px 0;
+            /* Add spacing nd the paragraph */
+
+        }
+
+        /* Style for the unordered list */
+        .content ul {
+            padding-left: 20px;
+            /* Indent the list */
+            list-style: none;
+            /* Remove default bullets */
+        }
+
+
+
+        /* General Footer Styles */
+        .footer {
+            position: relative;
+            top: 100px;
+            background-color: #b1d9c7;
+            color: #000000;
+            padding: 40px 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 20px;
+        }
+
+        .footer-left h3 {
+            position: relative;
+            top: 1px;
+            left: -15px;
+            margin: 0;
+            font-size: 1.5rem;
+            color: #000000;
+        }
+
+
+        .footer-left p {
+            margin: 5px 0 0 0;
+            font-size: 1rem;
+            color: #000000;
+        }
+
+        .footer-right {
+            font-size: 0.9rem;
+            color: #000000;
+        }
+
+        /* Footer Bottom Section */
+        .footer-bottom {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #000000;
+            margin-top: 10px;
+        }
+
+        .footer-bottom a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Responsiveness */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .project-section {
+            background-color: rgb(198, 236, 218);
+            padding: 60px 40px;
+            font-family: 'Georgia', serif;
+            text-align: center;
+        }
+
+        .project-heading {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .project-grid {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            width: 400px;
+            background-color: transparent;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-title {
+            margin-top: 20px;
+            font-size: 22px;
+            text-decoration: underline;
+            color: #2e2e2e;
+        }
+
+        .project-description {
+            font-size: 16px;
+            margin-top: 10px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+
+        /* Styling for the fifth section */
+        .fifthsection {
+            padding: 40px 20px;
+
+            /* Light background for contrast */
+            color: #333;
+            /* Dark text for readability */
+
+        }
+
+        /* Container for the section */
+        .fifth {
+            max-width: 1200px;
+            /* Limit the width for better readability */
+            margin: 0 auto;
+            /* Center the section */
+            text-align: center;
+            /* Align text to the left */
+
+        }
+
+        /* Main heading for the section */
+        .fifth h6 {
+            position: relative;
+            left: 470px;
+            top: -25px;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            /* Add a primary color */
+            text-align: left;
+            /* Center align main heading */
+        }
+
+        /* Subsection headings */
+        .fifth h4 {
+            position: relative;
+            top: 50px;
+            left: -90px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 20px 0 10px;
+            color: #007777;
+            /* Secondary color for headings */
+        }
+
+        /* Styling for unordered lists */
+        .fifth ul {
+            position: relative;
+            left: -100px;
+            top: 50px;
+            list-style-type: disc;
+            /* Add bullets */
+            padding-left: 20px;
+            /* Indent the list */
+            margin: 0;
+
+        }
+
+        /* List items */
+        .fifth ul li {
+            font-size: 0.8rem;
+            /* Adjust text size */
+            line-height: 1.8;
+            /* Add space between lines */
+            color: #444;
+            /* Subtle text color */
+        }
+
+        /* Section organization - Flexbox for subsections */
+        .programming-languages,
+        .tools,
+        .concepts {
+            margin-bottom: 30px;
+            /* Add spacing between subsections */
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .fifth {
+                display: flex;
+                /* Flex layout for larger screens */
+                justify-content: space-between;
+                /* Distribute subsections evenly */
+            }
+
+            .programming-languages,
+            .tools,
+            .concepts {
+                flex: 1;
+                /* Equal width for subsections */
+                margin-right: 20px;
+                /* Spacing between columns */
+            }
+
+            .concepts {
+                margin-right: 0;
+                /* Remove right margin for the last column */
+            }
+        }
+
+        /* Adjust list font size for smaller screens */
+        @media (max-width: 768px) {
+            .fifth ul li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <div class="left">Javed's Portfolio</div>
+        <div class="left">This website is only a visual representation of my portfolio!
+            This is just a roadmap of what I'm currently learning.
+            Once I complete all of this, I'll update it.
+            Thank you!
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftSection">
+                Hey.... I'm <span class="green">Shaikh Javed</span>
+
+                <div>And I.m Second Year</div>
+                <div>Data Scientist Student</div>
+                <span id="element"></span>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="insta 1.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/shk-javed-0b77b327b/" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.kaggle.com/shkjaved" target="_blank">
+                        <img src="kaggle.png" alt="kaggle">
+                    </a>
+                    <a href="https://github.com/shk-javed" target="_blank">
+                        <img src="github(1).png" alt="github">
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="HEIF Image 2.jpg" alt="">
+        </section>
+
+        <hr>
+        <section class="Secondsection project-section">
+            <h1 class="project-heading">Projects</h1>
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <a href="https://your-site.com/aadhaar-masking-tool" target="_blank">
+                        <img src="/Users/shaikhjaved/Documents/portfolio website/Screenshot 2025-07-21 at 8.39.04 PM.png" alt="Aadhaar Masking Tool"
+                            class="project-image" />
+                        <h3 class="project-title">Aadhaar Masking Tool</h3>
+                        <p class="project-description">
+                            A Django-powered web app to detect Aadhaar numbers in images and PDFs, then mask the first 8
+                            digits securely using OCR and OpenCV/PaddleOCR.
+                        </p>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://your-site.com/keystroke-stress-detector" target="_blank">
+                        <img src="/Users/shaikhjaved/Documents/portfolio website/Screenshot 2025-07-21 at 8.41.47 PM.png" alt="Keystroke Stress Detection"
+                            class="project-image" />
+                        <h3 class="project-title">Keystroke Stress Detection</h3>
+                        <p class="project-description">
+                            A machine learning-based Streamlit app that detects user stress levels in real-time using
+                            keystroke dynamics such as H., DD., and UD. features.
+                        </p>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://your-site.com/student-support-chatbot" target="_blank">
+                        <img src="/Users/shaikhjaved/Documents/portfolio website/WhatsApp Image 2025-07-21 at 20.43.42.jpeg" alt="Student Support Chatbot"
+                            class="project-image" />
+                        <h3 class="project-title">Student Support Chatbot</h3>
+                        <p class="project-description">
+                            A Dialogflow-based chatbot integrated with web and WhatsApp to assist students with
+                            college-related queries like fees, timetable, and admissions.
+                        </p>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://your-site.com/netflix-analysis" target="_blank">
+                        <img src="{% static 'images/netflix-analysis.jpg' %}" alt="Netflix Data Analysis"
+                            class="project-image" />
+                        <h3 class="project-title">Netflix Data Analysis</h3>
+                        <p class="project-description">
+                            Exploratory data analysis (EDA) on Netflix content dataset to uncover trends in genre,
+                            country, and release year using Python and seaborn.
+                        </p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <hr>
+        <section class="thirdsection">
+            <h2>Education</h2>
+
+            <div class="box">
+                <!-- S.C.C Section -->
+                <div class="horizontal">
+                    <img class="image-right" src="12th.png" alt="Logo">
+                    <div>
+                        <div class="horizontal-title">Board of Maharashtra | S.C.C</div>
+                        <p class="subtitle">June 2019 - June 2020 | Mumbai Maharashtra</p>
+                        <ul class="horizontal-desc">
+                            <li>A.M.Y Urdu High School</li>
+                            <li>75% out of 100%</li>
+                            <li>First Division in H.S.C Board Examinations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Gap between sections -->
+                <div class="spacer"></div>
+
+                <!-- H.S.C Section -->
+                <div class="horizontal">
+                    <img class="image-right" src="12th.png" alt="Logo">
+                    <div>
+                        <div class="horizontal-title">Board of Maharashtra | H.S.C | (Science)</div>
+                        <p class="subtitle">July 2021 - July 2022 | Mumbai Maharashtra</p>
+                        <ul class="horizontal-desc">
+                            <li>Ismail Yusuf College</li>
+                            <li>42% out of 100%</li>
+                            <li>Second Division in H.S.C Board Examinations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Gap between sections -->
+                <div class="spacer"></div>
+
+                <!-- B.Sc. Section -->
+                <div class="horizontal">
+                    <img class="image-right bsc-image-large" src="Untitled design.png" alt="Logo">
+                    <div>
+                        <div class="horizontal-title">University of Mumbai | B.Sc. in Data Science</div>
+                        <p class="subtitle">Admission Year | Mumbai Maharashtra</p>
+                        <ul class="horizontal-desc">
+                            <li>Reena Mehta Collenge | Bhaindar.West</li>
+                            <li>First Year CGPA - 7.40</li>
+                            <li>Second Year Appearing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="fourthsection">
+            <div class="icons-container">
+                <!-- Row of Icons -->
+                <div class="icons">
+                    <img src="png-transparent-mysql-round-logo-tech-companies-thumbnail-removebg-preview.png"
+                        alt="MySQL">
+                    <img src="main-qimg-ba415f78a6514c452bcce7e6910ce5ad.png" alt="Python">
+                    <img src="R_logo.svg.png" alt="R">
+                </div>
+                <div class="icons">
+                    <img src="office-database-icon-1966x2048-mah3mrgd.png" alt="Database">
+                    <img src="excel-logo-8033473_640.png" alt="Excel">
+                </div>
+            </div>
+
+            <!-- Programming Languages & Libraries Section -->
+            <div class="content">
+                <h3>Skill's</h3> <!-- Main heading for Skills -->
+                <div class="programming-languages">
+                    <h4>Programming Languages & Libraries</h4>
+                    <ul>
+                        <li>Python — NumPy, Matplotlib, Pandas, PySpark, SpaCy, NLTK</li>
+                        <li>R — ggplot2, dplyr, tidyverse, rvest, sp, sf, terra</li>
+                        <li>SQL — MySQL, PostgreSQL</li>
+                    </ul>
+                </div>
+
+                <div class="tools">
+                    <h4>Tools & Softwares</h4>
+                    <ul>
+                        <li>Apache Hadoop and Spark</li>
+                        <li>Microsoft Excel & Google Sheets</li>
+                        <li>AntConc</li>
+                        <li>Tableau</li>
+                    </ul>
+                </div>
+
+                <div class="concepts">
+                    <h4>Concepts</h4>
+                    <ul>
+                        <li>Data wrangling and preprocessing</li>
+                        <li>Exploratory data analysis</li>
+                        <li>Data Mining and Machine Learning algorithms</li>
+                        <li>Deep learning and neural networks</li>
+                        <li>Text analysis and natural language processing</li>
+                        <li>Data modeling, relational databases, and database querying</li>
+                        <li>Big data processing and distributed computing</li>
+                        <li>Data visualization</li>
+                        <li>Web scraping</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+                <h5>Certifications</h5> <!-- Main heading for Skills -->
+                <ul>
+                    <p>Work in progress! I will update this section once I finish the certifications I’m pursuing.</p>
+                </ul>
+            </div>
+
+            <hr>
+
+            <section class="fifthsection">
+                <!-- Programming Languages & Libraries Section -->
+                <div class="fifth">
+                    <h6>Experience</h6> <!-- Main heading for Skills -->
+                    <div class="programming-languages">
+                        <h4>Programming Languages & Libraries</h4>
+                        <ul>
+                            <li>Python — NumPy, Matplotlib, Pandas, PySpark, SpaCy, NLTK</li>
+                            <li>R — ggplot2, dplyr, tidyverse, rvest, sp, sf, terra</li>
+                            <li>SQL — MySQL, PostgreSQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tools">
+                        <h4>Tools & Softwares</h4>
+                        <ul>
+                            <li>Apache Hadoop and Spark</li>
+                            <li>Microsoft Excel & Google Sheets</li>
+                            <li>AntConc</li>
+                            <li>Tableau</li>
+                        </ul>
+                    </div>
+
+                    <div class="concepts">
+                        <h4>Concepts</h4>
+                        <ul>
+                            <li>Data wrangling and preprocessing</li>
+                            <li>Exploratory data analysis</li>
+                            <li>Data Mining and Machine Learning algorithms</li>
+                            <li>Deep learning and neural networks</li>
+                            <li>Text analysis and natural language processing</li>
+                            <li>Data modeling, relational databases, and database querying</li>
+                            <li>Big data processing and distributed computing</li>
+                            <li>Data visualization</li>
+                            <li>Web scraping</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <footer class="footer">
+                    <div class="footer-container">
+                        <div class="footer-left">
+                            <h3>Contact Me</h3>
+                            <p>hidden</p>
+                        </div>
+                        <div class="footer-right">
+                            <p>Last updated: 13 Jan, 2025</p>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2025 All rights reserved | <a href="https://www.shaikhjavedportfolio.com"
+                                target="_blank">www.shaikhjavedportfolio.com</a></p>
+                    </div>
+                </footer>
+
+</html>
+</main>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="globe.js"></script>
+<! -- Yeh aapki nayi file hai -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['i would love play with Data💡', 'Coding today, predicting tomorrow💻🔮',
+                'Exploring the science behind every decision🔍'
+            ],
+            typeSpeed: 50,
+        });
+    </script>
+
+    </body>
+
+
+    </html>
