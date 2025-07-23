@@ -18,13 +18,26 @@
             pandding: 0;
             /* <-- Typo here */
         }
-body {
-  font-family: Georgia, serif;
-}
 
-h1, h2, h3, h4, h5, h6, p, a, div, span, li, td, th {
-  font-family: Georgia, serif;
-}
+        body {
+            font-family: Georgia, serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        a,
+        div,
+        span,
+        li,
+        td,
+        th {
+            font-family: Georgia, serif;
+        }
 
         body {
             background-color: rgb(198, 236, 218);
@@ -35,11 +48,20 @@ h1, h2, h3, h4, h5, h6, p, a, div, span, li, td, th {
 
 
         nav {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            background-color: #b1d9c7;
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 100px;
-            background-color: #b1d9c7;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(8px);
+            border-radius: 0 0 16px 16px;
         }
 
         nav ul {
@@ -765,8 +787,7 @@ h1, h2, h3, h4, h5, h6, p, a, div, span, li, td, th {
 
                 <div class="project-card">
                     <a href="https://your-site.com/aadhaar-masking-tool" target="_blank">
-                        <img src="project1.png" alt="Aadhaar Masking Tool"
-                            class="project-image" />
+                        <img src="project1.png" alt="Aadhaar Masking Tool" class="project-image" />
                         <h3 class="project-title">Aadhaar Masking Tool</h3>
                         <p class="project-description">
                             A Django-powered web app to detect Aadhaar numbers in images and PDFs, then mask the first 8
@@ -777,8 +798,7 @@ h1, h2, h3, h4, h5, h6, p, a, div, span, li, td, th {
 
                 <div class="project-card">
                     <a href="https://your-site.com/keystroke-stress-detector" target="_blank">
-                        <img src="project2.png" alt="Keystroke Stress Detection"
-                            class="project-image" />
+                        <img src="project2.png" alt="Keystroke Stress Detection" class="project-image" />
                         <h3 class="project-title">Keystroke Stress Detection</h3>
                         <p class="project-description">
                             A machine learning-based Streamlit app that detects user stress levels in real-time using
@@ -789,8 +809,7 @@ h1, h2, h3, h4, h5, h6, p, a, div, span, li, td, th {
 
                 <div class="project-card">
                     <a href="https://your-site.com/student-support-chatbot" target="_blank">
-                        <img src="project3.png" alt="Student Support Chatbot"
-                            class="project-image" />
+                        <img src="project3.png" alt="Student Support Chatbot" class="project-image" />
                         <h3 class="project-title">Student Support Chatbot</h3>
                         <p class="project-description">
                             A Dialogflow-based chatbot integrated with web and WhatsApp to assist students with
@@ -801,8 +820,7 @@ h1, h2, h3, h4, h5, h6, p, a, div, span, li, td, th {
 
                 <div class="project-card">
                     <a href="https://your-site.com/netflix-analysis" target="_blank">
-                        <img src="project4.png" alt="Netflix Data Analysis"
-                            class="project-image" />
+                        <img src="project4.png" alt="Netflix Data Analysis" class="project-image" />
                         <h3 class="project-title">Netflix Data Analysis</h3>
                         <p class="project-description">
                             Exploratory data analysis (EDA) on Netflix content dataset to uncover trends in genre,
